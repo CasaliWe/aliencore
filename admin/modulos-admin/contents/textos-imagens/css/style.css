@@ -1,0 +1,20 @@
+.container-imagem-preview{
+    height: 70px !important;
+}
+.container-imagem-preview img{
+    height: 100% !important;
+    width: 100% !important;
+    object-fit: cover !important;
+    object-position: center !important;
+}
+
+@media(min-width:1500px){
+    .container-imagem-preview{
+        height: 110px !important;
+    }
+}
+@media(max-width:992px){
+    .container-imagem-preview{
+        height: 200px !important;
+    }
+}

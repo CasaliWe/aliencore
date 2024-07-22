@@ -1,0 +1,32 @@
+/*----------------------------CONTATO-----------------------------*/
+#contato{
+    background-position: end;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    padding: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+._container-form{
+     width: 70%;
+}
+
+@media(max-width:992px){
+    #contato{
+        padding: 40px 5px;
+    }
+    
+    ._container-form{
+         width: 95%;
+         text-align: center;
+    }
+
+    ._form-inputs{
+         padding-bottom: 40px;
+         border-bottom: 1px solid rgba(128, 128, 128, 0.973);
+    }
+}
+/*----------------------------CONTATO-----------------------------*/

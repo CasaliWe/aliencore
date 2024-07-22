@@ -1,0 +1,42 @@
+/*--------------------------FOOTER----------------------*/
+footer{
+    padding: 50px 30px 20px 35px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+footer p{
+    font-size: 22px;
+}
+
+@media(max-width:992px){
+    footer{
+        padding: 20px 5px 5px 10px;
+    }
+    
+    footer p{
+        font-size:14px;
+    }
+}
+
+
+._logo-nav-footer{
+    margin: 0 25px;
+    width: 50px;
+}
+@media(min-width:1500px){
+   ._logo-nav-footer{
+       margin: 0 40px;
+       width: 70px;
+   }
+}
+@media(max-width:992px){
+   ._logo-nav-footer{
+       margin: 0 0px;
+       width: 60px;
+   }
+}
+
+/*--------------------------FOOTER----------------------*/

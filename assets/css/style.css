@@ -1,0 +1,604 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    color: white;
+}
+
+.text-alien{
+    color: #14EE5A !important;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+._btn-alien{
+    border: 2px solid #14EE5A !important;
+    border-radius: 7px !important;
+    padding: 15px 50px !important;
+    background-color: transparent !important;
+    cursor: pointer !important;
+    color: white !important;
+    transition: 400ms !important;
+}
+._btn-alien:hover{
+    background-color: rgba(128, 128, 128, 0.295) !important;
+}
+@media(max-width:992px){
+    ._btn-alien{
+        padding: 10px 30px !important;
+    }
+}
+
+
+._pag-ativa{
+    color: #14EE5A !important;
+}
+
+._hover-link-nav:hover{
+    color: #14ee5961 !important;
+    transition: 400ms;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*-------------------------------------------*/
+/*----------------PÁGINA SOBRE---------------*/
+/*-------------------------------------------*/
+
+/*HEADER*/
+#header-sobre{
+    height: 70vh;
+    width: 100%;
+    background-image: url(/img/site/capa-home.jpeg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+@media(min-width:1500px){
+    #header-sobre{
+        height: 50vh;
+    }
+}
+@media(max-width:992px){
+    #header-sobre{
+        background-position: center;
+        height: 50vh;
+    }
+}
+
+.title-pagina{
+     position: absolute;
+     bottom: 12%;
+     width: 100%;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     flex-direction: column;
+}
+.title-pagina h1{
+     font-size: 55px;
+     margin-bottom: 0px;
+}
+.title-pagina div a{
+    text-decoration: none;
+    font-size: 25px;
+    margin-top: -10px !important;
+    font-weight: 300 !important;
+    margin-left: 4px;
+    margin-right: 4px;
+}
+
+@media(max-width:992px){
+    .title-pagina h1{
+        font-size: 45px;
+    }
+    .title-pagina div a{
+       font-size: 20px;
+    }
+}
+/*HEADER*/
+
+
+
+
+
+/*IMAGEM E DESCRIÇÃO*/
+#imagem-descricao{
+    width: 60%;
+    padding-bottom: 30px;
+}
+#imagem-descricao p{
+    width: 80%;
+    margin: 20px auto;
+    font-size: 20px;
+}
+@media(min-width:1500px){
+    #imagem-descricao p{
+        width: 60%;
+        font-size: 24px;
+    }
+}
+@media(max-width:992px){
+    #imagem-descricao{
+        width: 90%;
+        padding-bottom: 40px;
+    }
+
+    #imagem-descricao h1{
+        font-size: 30px !important;
+        width: 70%;
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    #imagem-descricao p{
+        width: 90%;
+        font-size: 19px;
+    }
+}
+/*IMAGEM E DESCRIÇÃO*/
+
+
+
+
+._division-sobre{
+    height: 1px;
+    width: 60%;
+    background-color: white;
+}
+@media(max-width:992px){
+    ._division-sobre{
+        width: 86%;
+    }
+}
+
+
+/*-------------------------------------------*/
+/*----------------PÁGINA SOBRE---------------*/
+/*-------------------------------------------*/
+
+
+
+
+
+
+
+
+
+
+
+
+/*----------------------------------------------*/
+/*----------------PÁGINA GALERIA----------------*/
+/*----------------------------------------------*/
+
+/*HEADER*/
+#header-galeria{
+    height: 70vh;
+    width: 100%;
+    background-image: url(/img/site/capa-home.jpeg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+@media(min-width:1500px){
+    #header-galeria{
+        height: 50vh;
+    }
+}
+@media(max-width:992px){
+    #header-galeria{
+        background-position: center;
+        height: 50vh;
+    }
+}
+
+.title-pagina{
+     position: absolute;
+     bottom: 12%;
+     width: 100%;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     flex-direction: column;
+}
+.title-pagina h1{
+     font-size: 55px;
+     margin-bottom: 0px;
+}
+.title-pagina div a{
+    text-decoration: none;
+    font-size: 25px;
+    margin-top: -10px !important;
+    font-weight: 300 !important;
+    margin-left: 4px;
+    margin-right: 4px;
+}
+
+@media(max-width:992px){
+    .title-pagina h1{
+        font-size: 45px;
+    }
+    .title-pagina div a{
+       font-size: 20px;
+    }
+}
+/*HEADER*/
+
+
+
+/*GALERIA ALL IMAGES EVENTOS*/
+.container-all-img-evento{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 80%;
+    margin: 70px auto;
+    padding-bottom: 50px;
+}
+.container-all-img-evento p{
+    font-size: 20px;
+    font-weight: 300;
+}
+.container-all-img-evento h1{
+    font-size: 45px;
+    margin-top: -10px;
+    margin-bottom: 25px;
+}
+@media(max-width:992px){
+    .container-all-img-evento{
+        width: 100%;
+    }
+}
+/*GALERIA ALL IMAGES EVENTOS*/
+
+/*----------------------------------------------*/
+/*----------------PÁGINA GALERIA----------------*/
+/*----------------------------------------------*/
+
+
+
+
+
+
+
+/*----------------------------------------------*/
+/*----------------PÁGINA AGENDA-----------------*/
+/*----------------------------------------------*/
+
+/*HEADER*/
+#header-agenda{
+    height: 70vh;
+    width: 100%;
+    background-image: url(/img/site/capa-home.jpeg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+@media(min-width:1500px){
+    #header-agenda{
+        height: 50vh;
+    }
+}
+@media(max-width:992px){
+    #header-agenda{
+        background-position: center;
+        height: 50vh;
+    }
+}
+
+.title-pagina{
+     position: absolute;
+     bottom: 12%;
+     width: 100%;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     flex-direction: column;
+}
+.title-pagina h1{
+     font-size: 55px;
+     margin-bottom: 0px;
+}
+.title-pagina div a{
+    text-decoration: none;
+    font-size: 25px;
+    margin-top: -10px !important;
+    font-weight: 300 !important;
+    margin-left: 4px;
+    margin-right: 4px;
+}
+
+@media(max-width:992px){
+    .title-pagina h1{
+        font-size: 45px;
+    }
+    .title-pagina div a{
+       font-size: 20px;
+    }
+}
+/*HEADER*/
+
+
+
+/*CONTENT AGENDA*/
+#container-shows{
+    width: 80%;
+    margin-top: 30px;
+}
+@media(min-width:1500px){
+    #container-shows{
+        width: 60%;
+    }
+}
+@media(max-width:992px){
+    #container-shows{
+        width: 90%;
+    }
+}
+
+.btn-ver-no-insta-evento{
+     background-color: #14EE5A;
+     border: none;
+     color: white;
+     padding: 5px 20px;
+     font-size: 15px;
+     border-radius: 5px;
+     transition: 500ms;
+}
+.btn-ver-no-insta-evento:hover{
+    background-color: #14ee594f;
+}
+@media(max-width:992px){
+    .btn-ver-no-insta-evento{
+        padding: 4px 10px;
+        font-size: 12px;
+        align-self: center !important;
+    }
+
+    ._descri-evento{
+        width: 50% !important;
+        align-self: center !important;
+    }
+}
+/*CONTENT AGENDA*/
+
+
+
+/*----------------------------------------------*/
+/*----------------PÁGINA AGENDA-----------------*/
+/*----------------------------------------------*/
+
+
+
+
+
+
+
+/*-----------------------------------------------*/
+/*----------------PÁGINA NOTICIA-----------------*/
+/*-----------------------------------------------*/
+
+/*HEADER*/
+#header-noticia{
+    height: 70vh;
+    width: 100%;
+    background-image: url(/img/site/capa-home.jpeg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+@media(min-width:1500px){
+    #header-noticia{
+        height: 50vh;
+    }
+}
+@media(max-width:992px){
+    #header-noticia{
+        background-position: center;
+        height: 50vh;
+    }
+}
+
+.title-pagina{
+     position: absolute;
+     bottom: 12%;
+     width: 100%;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     flex-direction: column;
+}
+.title-pagina h1{
+     font-size: 55px;
+     margin-bottom: 0px;
+}
+.title-pagina div a{
+    text-decoration: none;
+    font-size: 25px;
+    margin-top: -10px !important;
+    font-weight: 300 !important;
+    margin-left: 4px;
+    margin-right: 4px;
+}
+
+@media(max-width:992px){
+    .title-pagina h1{
+        font-size: 45px;
+    }
+    .title-pagina div a{
+       font-size: 20px;
+    }
+}
+/*HEADER*/
+
+
+
+
+
+/*NOTICIA UNICA*********************/
+._container-noticia-unica{
+     width: 60%;
+     margin-left: auto;
+     margin-right: auto;
+     margin-top: 30px;
+     margin-bottom: 30px;
+}
+._container-noticia-unica p{
+     font-size: 18px;
+}
+._container-noticia-unica a{
+    border: 2px solid #14EE5A;
+    color: white;
+    font-size: 20px;
+    padding: 10px 50px;
+    margin-top: 35px;
+    border-radius: 7px;
+    transition: 400ms;
+}
+._container-noticia-unica a:hover{
+    background-color: rgba(255, 255, 255, 0.345);
+}
+
+#container-imagem-noticia{
+    width: 100%;
+}
+#container-imagem-noticia img{
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+@media(min-width:1500px){
+    ._container-noticia-unica{
+        width: 50%;
+        margin-top: 40px;
+        margin-bottom: 40px;
+   }
+   ._container-noticia-unica p{
+        font-size: 21px;
+   }
+}
+@media(max-width:992px){
+    ._container-noticia-unica{
+        width: 90%;
+   }
+   ._container-noticia-unica p{
+        font-size: 18px;
+   }
+}
+/*NOTICIA UNICA*********************/
+
+
+
+
+
+/*NOTICIAS ALL*********************/
+._title-noticia-noticias{
+    position: relative;
+    line-height: 1.2;
+    max-height: calc(1.2em * 1);
+    min-height: calc(1.2em * 1);
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 1;
+    text-overflow: ellipsis;
+}
+._sub-noticia-noticias{
+    position: relative;
+    line-height: 1.2;
+    max-height: calc(1.2em * 2);
+    min-height: calc(1.2em * 2);
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    text-overflow: ellipsis;
+}
+
+._hover-noticia:hover{
+    background-color: rgba(255, 255, 255, 0.057);
+}
+._hover-noticia img{
+   height: 230px;
+}
+
+@media(max-width:992px){
+    ._title-noticia-noticias{
+        position: relative;
+        line-height: 1.2;
+        max-height: calc(1.2em * 1);
+        min-height: calc(1.2em * 1);
+        overflow: hidden;
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 1;
+        text-overflow: ellipsis;
+        font-size: 25px;
+    }
+    ._sub-noticia-noticias{
+        position: relative;
+        line-height: 1.2;
+        max-height: calc(1.2em * 2);
+        min-height: calc(1.2em * 2);
+        overflow: hidden;
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 2;
+        text-overflow: ellipsis;
+        font-size: 20px;
+    }
+}
+/*NOTICIAS ALL*********************/
+
+
+
+/*-----------------------------------------------*/
+/*----------------PÁGINA NOTICIA-----------------*/
+/*-----------------------------------------------*/

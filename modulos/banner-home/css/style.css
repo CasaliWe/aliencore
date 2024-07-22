@@ -1,0 +1,101 @@
+/*HEADER*/
+._header-home{
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    height: 100vh;
+}
+@media(max-width:992px){
+   ._header-home{
+       background-attachment: fixed;
+       height:85vh;
+   }
+}
+
+
+
+._titulo-inicio{
+    font-size: 40px;
+}
+@media(min-width:1500px){
+   ._titulo-inicio{
+       font-size: 55px;
+   }
+}
+@media(max-width:992px){
+   ._titulo-inicio{
+       font-size: 24px;
+   }
+}
+
+
+._divisao-inicio{
+    width: 40%;
+    margin: 0 auto;
+    margin-top: -10px;
+    height: 3px;
+    background-color: #14EE5A;
+}
+@media(max-width:992px){
+   ._divisao-inicio{
+       width: 60%;
+   }
+}
+
+
+._sub-inicio{
+   font-size: 22px;
+}
+@media(min-width:1500px){
+  ._sub-inicio{
+      font-size: 35px;
+  }
+}
+@media(max-width:992px){
+  ._sub-inicio{
+      font-size: 15px;
+  }
+}
+
+
+._btn-inicio{
+    font-size: 20px;
+}
+@media(min-width:1500px){
+   ._btn-inicio{
+       font-size: 30px;
+   }
+}
+@media(max-width:992px){
+   ._btn-inicio{
+       font-size: 15px;
+       padding: 10px 20px !important;
+   }
+}
+
+
+._icons-inicio{
+   position: absolute;
+   bottom: 5%;
+   width: 100%;
+}
+._icons-inicio a{
+   font-size: 30px;
+}
+._icons-inicio a i:hover{
+   color: rgba(255, 255, 255, 0.322) !important;
+}
+@media(min-width:1500px){
+   ._icons-inicio a{
+       font-size: 40px;
+   }
+}
+@media(max-width:992px){
+   ._icons-inicio a{
+       font-size: 25px;
+       margin: 0px 5px !important;
+   }
+}
+/*HEADER*/

@@ -1,0 +1,17 @@
+/*INSTAGRAM*/
+#btn-ver-nosso-instagram{
+    border: 2px solid #14EE5A;
+    border-radius: 7px;
+    padding: 10px 50px;
+    background-color: transparent;
+    transition: 500ms;
+}
+#btn-ver-nosso-instagram:hover{
+    background-color: rgba(255, 255, 255, 0.26);
+}
+@media(max-width:992px){
+    #btn-ver-nosso-instagram{
+        padding: 8px 40px;
+    }
+}
+/*INSTAGRAM*/
