@@ -8,3 +8,6 @@ $dotenv->load();
 
 // ************* BASE URL *************
 $base_url = $_ENV['BASE_URL'];
+
+// ************* LINK FREELADEV *************
+$freeladev = $_ENV['LINK_FREELADEV'];
