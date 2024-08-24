@@ -32,6 +32,28 @@
     </div>
 </div>
 
+<div class="modal fade" id="modalAviso-limite" tabindex="-1" aria-labelledby="modalAviso-limite" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content px-3">
+                <div class="py-4 modal-header d-flex flex-column">
+                    <h6 class="modal-title fs-5 mb-4 text-center" id="exampleModalLabel">Limite máximo de links atingido! <i class="ms-2 fas fa-exclamation-triangle text-danger"></i> </h6>
+                    <button onclick="reescreverRota('limite')" type="button" class="w-25 btn btn-danger" data-bs-dismiss="modal" aria-label="Close"> Fechar </button>
+                </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="modalAviso-delete" tabindex="-1" aria-labelledby="modalAviso-delete" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content px-3">
+                <div class="py-4 modal-header d-flex flex-column">
+                    <h6 class="modal-title fs-5 mb-4 text-center" id="exampleModalLabel">Deletado com sucesso! <i class="ms-2 fas fa-check text-success"></i> </h6>
+                    <button onclick="reescreverRota('delete')" type="button" class="w-25 btn btn-success" data-bs-dismiss="modal" aria-label="Close"> Fechar </button>
+                </div>
+        </div>
+    </div>
+</div>
+
 
 
 <script>
@@ -71,6 +93,24 @@
     <script>
         document.addEventListener('DOMContentLoaded', function () {
         var modalVaga = new bootstrap.Modal(document.getElementById('modalAviso-create'));
+        modalVaga.show();
+        });
+    </script>
+<?php } ?>
+
+<?php if(isset($_GET['limite']) && $_GET['limite'] == "true"){ ?>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+        var modalVaga = new bootstrap.Modal(document.getElementById('modalAviso-limite'));
+        modalVaga.show();
+        });
+    </script>
+<?php } ?>
+
+<?php if(isset($_GET['delete']) && $_GET['delete'] == "true"){ ?>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+        var modalVaga = new bootstrap.Modal(document.getElementById('modalAviso-delete'));
         modalVaga.show();
         });
     </script>

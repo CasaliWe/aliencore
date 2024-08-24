@@ -5,6 +5,8 @@ use Dotenv\Dotenv;
 $dotenv = Dotenv::createImmutable(__DIR__ . '/../');
 $dotenv->load();
 
+// **********CONEXÃO COM O DB**********
+require __DIR__.'/db.php';
 
 // ************* BASE URL *************
 $base_url = $_ENV['BASE_URL'];

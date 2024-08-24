@@ -31,7 +31,7 @@
 
 <!-- DESKTOP -->
 <aside id="navegacao-desktop" class="position-fixed left-0 vh-100 d-flex flex-column bg-secondary bg-opacity-25 shadow-lg">
-    <div class="bg-logo-nav py-4 w-100 px-3 d-flex justify-content-center align-items-center"><img class="w-50" src="<?php echo $base_url ?>assets/imagens/site-admin/logo.png" alt="Logo"></div>
+    <div class="bg-logo-nav py-4 w-100 px-3 d-flex justify-content-center align-items-center"><img class="w-25" src="<?php echo $base_url ?>assets/imagens/site-admin/logo.png" alt="Logo"></div>
 
     <!-- NAVEGAÇÃO -->
     <?php include "modulos-admin/navegacao/nav/index.php";?>

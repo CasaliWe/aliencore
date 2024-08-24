@@ -9,9 +9,9 @@
 <p class="mb-5 small">Nesta sessão você pode atualizar os <strong>banners mobile e desktop</strong> do seu site!</p>
 
 
-
+<!-- banner home -->
 <section class="w-100 mb-5 pb-4" style="overflow-x: auto;">
-    <h6 class="mb-3">Atualizar banner da página home</h6>
+    <h6 class="mb-3">Atualizar banner da página Home</h6>
 
     <!-- header -->
     <div class="container-banner row py-3">
@@ -26,13 +26,17 @@
     <!-- content -->
     <div class="container-banner row py-4 border-top border-bottom">
         <div class="col-2 align-self-center">1-</div>
-        <div class="col-3 align-self-center"> <div class="container-desktop-banner"> <img src="<?php echo $base_url ?>assets/imagens/site-admin/preview.png"> </div> </div>
-        <div class="col-3 align-self-center"> <div class="container-mobile-banner"> <img src="<?php echo $base_url ?>assets/imagens/site-admin/preview.png"> </div> </div>
-        <div class="col-2 align-self-center"> <a href="" target="_blank">Ver no site</a> </div>
-        <div class="col-2 text-end align-self-center"> <button class="btn-edit-banner" onclick="inserirIdModalAddBanner('banner_home_desktop','banner_home_mobile', 'desktop20240607183805branca normal.png', 'mobile20240607183805over branca.png', 'Home')" data-bs-toggle="modal" data-bs-target="#modalBanner"><i class="fas fa-edit fs-3"></i></button> </div>
+        <div class="col-3 align-self-center"> <div class="container-desktop-banner"> <img src="<?php echo $base_url ?>assets/imagens/arquivos/banners/<?= $banners[0]['banner_home_desktop']; ?>"> </div> </div>
+        <div class="col-3 align-self-center"> <div class="container-mobile-banner"> <img src="<?php echo $base_url ?>assets/imagens/arquivos/banners/<?= $banners[0]['banner_home_mobile']; ?>"> </div> </div>
+        <div class="col-2 align-self-center"> <a href="../index.php" target="_blank">Ver no site</a> </div>
+        <div class="col-2 text-end align-self-center"> <button class="btn-edit-banner" onclick="inserirIdModalAddBanner('banner_home_desktop','banner_home_mobile', '<?= $banners[0]['banner_home_desktop']; ?>', '<?= $banners[0]['banner_home_mobile']; ?>', 'Home')" data-bs-toggle="modal" data-bs-target="#modalBanner"><i class="fas fa-edit fs-3"></i></button> </div>
     </div>
     <!-- content -->
 </section>
+<!-- banner home -->
+
+
+
 
 
 

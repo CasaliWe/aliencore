@@ -7,7 +7,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta property="og:type" content="website">
-<meta property="og:image" content="<?php echo $base_url ?>assets/imagens/favicon-admin/thumb-admin.png">
+<meta property="og:image" content="<?php echo $base_url ?>assets/imagens/favicon-admin/thumb-admin.jpg">
 <meta property="og:image:width" content="310">
 <meta property="og:image:height" content="310">
 <meta property="og:title" content="<?php echo $title_site ?>">
@@ -15,11 +15,15 @@
 <meta property="og:description" content="<?php echo $descri_site ?>">
 <meta property="og:url" content="<?php echo $base_url ?>">
 
+<!-- SUMMERNOTE -->
+<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/summernote/0.8.18/summernote-bs4.min.css" rel="stylesheet">
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/summernote/0.8.18/summernote-bs4.min.js"></script>
+
 <!-- FAVICON -->
 <link rel="icon" href="<?php echo $base_url ?>assets/imagens/favicon-admin/favicon-admin.png">
-
-<!-- TEXT AREA PERSONALIZADO -->
-<script src="https://cdn.ckeditor.com/4.16.0/standard/ckeditor.js"></script>
 
 <!--FONTAWSOME-->
 <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
@@ -29,6 +33,11 @@
 
 <!-- GLOBAL CSS -->
 <link rel="stylesheet" href="<?php echo $base_url ?>assets/css-global/style.css">
+
+<!-- BASE URL JS -->
+<script>
+    var base_url = "<?= $_ENV['BASE_URL'] ?>admin";
+</script>
 
 <!-- GLOBAL JS -->
 <script src="<?php echo $base_url ?>assets/js-global/app.js"></script>

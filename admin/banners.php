@@ -1,6 +1,11 @@
 <?php
    //verifica auth;
    include_once './helpers/verifica-auth.php';
+
+   // buscar banners
+   require 'config/bootstrap.php';
+   use Repositories\BannersRepository;
+   $banners = BannersRepository::getAll();
 ?>
 
 <!DOCTYPE html>

@@ -1,16 +1,6 @@
 <?php
    //verifica auth;
    include_once './helpers/verifica-auth.php';
-
-   require 'config/bootstrap.php';
-
-    //pegando contatos
-    use Repositories\ContatosRepository;
-    $contatos = ContatosRepository::getContatos();
-
-    //pegando endereco
-    use Repositories\EnderecoRepository;
-    $endereco = EnderecoRepository::getEndereco();
 ?>
 
 <!DOCTYPE html>
@@ -38,7 +28,7 @@
         <h5 id="titulo-content-pagina" class="fw-semibold"><?php echo $tituloContentPagina ?></h5>
 
         <!-- módulo content página -->
-        <?php include_once 'modulos-admin/contents/dashboard/index.php';?>
+        <?php include_once 'modulos-admin/contents/servicos/index.php';?>
         <!-- módulo content página -->
     </main>
     <!-- CONTENT -->
