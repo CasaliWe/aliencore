@@ -7,7 +7,7 @@
 
 
 
-<main id="container-login" style="background-image: url(<?php echo $base_url ?>assets/imagens/site-admin/banner-login.png);">
+<main id="container-login" style="background-image: url(<?php echo $base_url ?>assets/imagens/site-admin/banner-login.jpg);">
     <form onsubmit="loading()" action="modulos-admin/login/php/logar.php" method="post" id="container-content" class="border-login">
         <img src="<?php echo $base_url ?>assets/imagens/site-admin/logo.png" id="logo-login">
         <p class="mb-4">PAINEL ADMIN</p>

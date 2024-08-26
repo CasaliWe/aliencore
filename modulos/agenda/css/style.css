@@ -1,0 +1,41 @@
+/*CONTENT AGENDA*/
+#container-shows{
+    width: 80%;
+    margin-top: 30px;
+}
+@media(min-width:1500px){
+    #container-shows{
+        width: 60%;
+    }
+}
+@media(max-width:992px){
+    #container-shows{
+        width: 90%;
+    }
+}
+
+.btn-ver-no-insta-evento{
+     background-color: #14EE5A;
+     border: none;
+     color: white;
+     padding: 5px 20px;
+     font-size: 15px;
+     border-radius: 5px;
+     transition: 500ms;
+}
+.btn-ver-no-insta-evento:hover{
+    background-color: #14ee594f;
+}
+@media(max-width:992px){
+    .btn-ver-no-insta-evento{
+        padding: 4px 10px;
+        font-size: 12px;
+        align-self: center !important;
+    }
+
+    ._descri-evento{
+        width: 50% !important;
+        align-self: center !important;
+    }
+}
+/*CONTENT AGENDA*/

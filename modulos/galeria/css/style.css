@@ -1,0 +1,25 @@
+/*GALERIA ALL IMAGES EVENTOS*/
+.container-all-img-evento{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 80%;
+    margin: 70px auto;
+    padding-bottom: 50px;
+}
+.container-all-img-evento p{
+    font-size: 20px;
+    font-weight: 300;
+}
+.container-all-img-evento h1{
+    font-size: 45px;
+    margin-top: -10px;
+    margin-bottom: 25px;
+}
+@media(max-width:992px){
+    .container-all-img-evento{
+        width: 100%;
+    }
+}
+/*GALERIA ALL IMAGES EVENTOS*/

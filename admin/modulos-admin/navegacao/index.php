@@ -16,7 +16,7 @@
 
     <div id="footer-nav">
         <h6 class="fw-semibold">PAINEL ADMINISTRATIVO</h6>
-        <img src='<?= $base_url ?>assets/imagens/site-admin/logo-nostra.png'>
+        <p class="text-dark fw-bold" style="font-size: 12px;">Alien Core</p>
     </div>
 </div>
 
@@ -40,7 +40,7 @@
 
     <div id="footer-nav">
         <h6 class="fw-semibold">PAINEL ADMINISTRATIVO</h6>
-        <img src='<?= $base_url ?>assets/imagens/site-admin/logo-nostra.png'>
+        <p class="fw-bold" style="font-size: 12px;">Alien Core</p>
     </div>
 </aside>
 <!-- DESKTOP -->

@@ -1,0 +1,51 @@
+/*BANNER ALL*/
+#banner-all{
+    height: 70vh;
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+@media(min-width:1500px){
+    #banner-all{
+        height: 50vh;
+    }
+}
+@media(max-width:992px){
+    #banner-all{
+        background-position: center;
+        height: 50vh;
+    }
+}
+
+.title-pagina{
+     position: absolute;
+     bottom: 12%;
+     width: 100%;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     flex-direction: column;
+}
+.title-pagina h1{
+     font-size: 55px;
+     margin-bottom: 0px;
+}
+.title-pagina div a{
+    text-decoration: none;
+    font-size: 25px;
+    margin-top: -10px !important;
+    font-weight: 300 !important;
+    margin-left: 4px;
+    margin-right: 4px;
+}
+
+@media(max-width:992px){
+    .title-pagina h1{
+        font-size: 45px;
+    }
+    .title-pagina div a{
+       font-size: 20px;
+    }
+}
+/*BANNER ALL*/

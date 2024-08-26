@@ -1,0 +1,49 @@
+/*IMAGEM E DESCRIÇÃO*/
+#imagem-descricao{
+    width: 60%;
+    padding-bottom: 30px;
+}
+#imagem-descricao p{
+    width: 80%;
+    margin: 20px auto;
+    font-size: 20px;
+}
+@media(min-width:1500px){
+    #imagem-descricao p{
+        width: 60%;
+        font-size: 24px;
+    }
+}
+@media(max-width:992px){
+    #imagem-descricao{
+        width: 90%;
+        padding-bottom: 40px;
+    }
+
+    #imagem-descricao h1{
+        font-size: 30px !important;
+        width: 70%;
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    #imagem-descricao p{
+        width: 90%;
+        font-size: 19px;
+    }
+}
+/*IMAGEM E DESCRIÇÃO*/
+
+
+
+
+._division-sobre{
+    height: 1px;
+    width: 60%;
+    background-color: white;
+}
+@media(max-width:992px){
+    ._division-sobre{
+        width: 86%;
+    }
+}

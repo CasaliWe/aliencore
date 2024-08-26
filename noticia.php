@@ -7,6 +7,13 @@
 </head>
 <body>
     
+    <!-- BANNER ALL -->
+    <?php include_once __DIR__ . '/modulos/banner-all/index.php'; ?>
+    <!-- BANNER ALL -->
+
+    <!-- NOTICIA -->
+    <?php include_once __DIR__ . '/modulos/noticia/index.php'; ?>
+    <!-- NOTICIA -->
 
     <!-- CONTATO -->
     <?php include_once __DIR__ . '/modulos/contato/index.php'; ?>

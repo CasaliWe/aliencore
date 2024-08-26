@@ -14,8 +14,8 @@
 
     <a href="index.php" class="mx-2 <?= $linkAtivoIndex ? $linkAtivoIndex : '' ?>">INÍCIO</a>
     <a href="galeria.php" class="mx-2 <?= $linkAtivoGaleria ? $linkAtivoGaleria : '' ?>">GALERIA</a>
-    <a href="sobre.php" class="mx-2" <?= $linkAtivoSobre ? $linkAtivoSobre : '' ?>>SOBRE</a>
-    <a href="agenda.php" class="mx-2" <?= $linkAtivoAgenda ? $linkAtivoAgenda : '' ?>>AGENDA</a>
+    <a href="sobre.php" class="mx-2 <?= $linkAtivoSobre ? $linkAtivoSobre : '' ?>">SOBRE</a>
+    <a href="agenda.php" class="mx-2 <?= $linkAtivoAgenda ? $linkAtivoAgenda : '' ?>">AGENDA</a>
     <a href="noticias.php" class="mx-2 <?= $linkAtivoNoticias ? $linkAtivoNoticias : '' ?>">NOTÍCIAS</a>
     <a href="#contato" class="mx-2" onclick="abrirMenuMobile(this, '_toggler')">CONTATO</a>
 

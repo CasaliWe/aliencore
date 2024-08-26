@@ -30,12 +30,12 @@
         <input class="form-control" value="<?= $contatos->_facebook; ?>" type="text" required name="@_facebook" id="@_facebook">
     </div>
 
-    <div class="mb-4 col-12 col-lg-6">
+    <div class="d-none mb-4 col-12 col-lg-6">
         <label for="linkedin" class="small">LinkedIn*</label>
         <input class="form-control" type="text" value="<?= $contatos->linkedin; ?>" required name="linkedin" id="linkedin">
     </div>
 
-    <div class="mb-4 col-12 col-lg-6">
+    <div class="d-none mb-4 col-12 col-lg-6">
         <label for="@_linkedin" class="small">@ do LinkedIn*</label>
         <input class="form-control" type="text" value="<?= $contatos->_linkedin; ?>" required name="@_linkedin" id="@_linkedin">
     </div>

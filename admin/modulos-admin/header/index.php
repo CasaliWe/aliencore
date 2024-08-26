@@ -7,7 +7,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta property="og:type" content="website">
-<meta property="og:image" content="<?php echo $base_url ?>assets/imagens/favicon-admin/thumb-admin.jpg">
+<meta property="og:image" content="<?php echo $base_url ?>assets/imagens/favicon-admin/thumb-admin.png">
 <meta property="og:image:width" content="310">
 <meta property="og:image:height" content="310">
 <meta property="og:title" content="<?php echo $title_site ?>">
