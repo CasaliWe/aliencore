@@ -1,6 +1,11 @@
 <?php
    //verifica auth;
    include_once './helpers/verifica-auth.php';
+
+    // buscar eventos
+    require 'config/bootstrap.php';
+    use Repositories\AgendaRepository;
+    $eventos = AgendaRepository::getEventos();
 ?>
 
 <!DOCTYPE html>
@@ -28,15 +33,21 @@
         <h5 id="titulo-content-pagina" class="fw-semibold"><?php echo $tituloContentPagina ?></h5>
 
         <!-- módulo content página -->
-        <?php include_once 'modulos-admin/contents/servicos/index.php';?>
+        <?php include_once 'modulos-admin/contents/agenda/index.php';?>
         <!-- módulo content página -->
     </main>
     <!-- CONTENT -->
 
     
     <!-- MODAL AVISOS -->
-     <?php include_once "modulos-admin/modal-aviso/index.php"; ?>
+    <?php include_once "modulos-admin/modal-aviso/index.php"; ?>
     <!-- MODAL AVISOS -->
+
+    <!-- MODAL LINKS FOOTER -->
+    <?php include_once "modulos-admin/contents/agenda/modais/modal-agenda/index.php"; ?>
+    <!-- MODAL LINKS FOOTER -->
+
+
 
 
     <!--BOOTSTRAP JS-->

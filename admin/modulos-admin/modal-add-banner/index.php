@@ -10,8 +10,6 @@
             <!-- ref inserido pelo js -->
             <input type="hidden" name="refBannerDesktop" id="refBannerDesktop">
             <input type="hidden" name="refBannerMobile" id="refBannerMobile">
-            <input type="hidden" name="nomeBannerDesktop" id="nomeBannerDesktop">
-            <input type="hidden" name="nomeBannerMobile" id="nomeBannerMobile">
             <!-- ref inserido pelo js -->
 
             <div class="mb-4">

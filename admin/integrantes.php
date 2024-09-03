@@ -1,6 +1,12 @@
 <?php
    //verifica auth;
    include_once './helpers/verifica-auth.php';
+
+
+    // buscar projetos
+    require 'config/bootstrap.php';
+    use Repositories\integrantesRepository;
+    $integrantes = integrantesRepository::getAll();
 ?>
 
 <!DOCTYPE html>
@@ -28,7 +34,7 @@
         <h5 id="titulo-content-pagina" class="fw-semibold"><?php echo $tituloContentPagina ?></h5>
 
         <!-- módulo content página -->
-        <?php include_once 'modulos-admin/contents/projetos/index.php';?>
+        <?php include_once 'modulos-admin/contents/integrantes/index.php';?>
         <!-- módulo content página -->
     </main>
     <!-- CONTENT -->
@@ -37,6 +43,14 @@
     <!-- MODAL AVISOS -->
      <?php include_once "modulos-admin/modal-aviso/index.php"; ?>
     <!-- MODAL AVISOS -->
+
+    <!-- MODAL ADD PROJETOS -->
+    <?php include_once "modulos-admin/contents/integrantes/modais/add-projetos/index.php"; ?>
+    <!-- MODAL ADD PROJETOS -->
+
+    <!-- MODAL EDITAR PROJETOS -->
+    <?php include_once "modulos-admin/contents/integrantes/modais/edit-projetos/index.php"; ?>
+    <!-- MODAL EDITAR PROJETOS -->
 
 
     <!--BOOTSTRAP JS-->
