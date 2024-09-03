@@ -5,7 +5,7 @@
 
     // buscar projetos
     require 'config/bootstrap.php';
-    use Repositories\integrantesRepository;
+    use Repositories\IntegrantesRepository;
     $integrantes = integrantesRepository::getAll();
 ?>
 
@@ -44,13 +44,13 @@
      <?php include_once "modulos-admin/modal-aviso/index.php"; ?>
     <!-- MODAL AVISOS -->
 
-    <!-- MODAL ADD PROJETOS -->
-    <?php include_once "modulos-admin/contents/integrantes/modais/add-projetos/index.php"; ?>
-    <!-- MODAL ADD PROJETOS -->
+    <!-- MODAL ADD INTEGRANTES -->
+    <?php include_once "modulos-admin/contents/integrantes/modais/add-integrantes/index.php"; ?>
+    <!-- MODAL ADD INTEGRANTES -->
 
-    <!-- MODAL EDITAR PROJETOS -->
-    <?php include_once "modulos-admin/contents/integrantes/modais/edit-projetos/index.php"; ?>
-    <!-- MODAL EDITAR PROJETOS -->
+    <!-- MODAL EDITAR INTEGRANTES -->
+    <?php include_once "modulos-admin/contents/integrantes/modais/edit-integrantes/index.php"; ?>
+    <!-- MODAL EDITAR INTEGRANTES -->
 
 
     <!--BOOTSTRAP JS-->

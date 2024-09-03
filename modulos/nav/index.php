@@ -20,8 +20,8 @@
     <a href="#contato" class="mx-2" onclick="abrirMenuMobile(this, '_toggler')">CONTATO</a>
 
     <div class="mt-5 pt-3 pb-5 mb-4 w-100 text-center">
-         <a href="https://www.instagram.com/aliencore_rock/" target="_blank" class="mx-2"><i class="fab fa-instagram display-2"></i></a>
-         <a href="https://www.facebook.com/aliencorerock" target="_blank" class="mx-2"><i class="fab fa-facebook display-2"></i></a>
+         <a href="<?= $dados['contatos']['instagram']; ?>" target="_blank" class="mx-2"><i class="fab fa-instagram display-2"></i></a>
+         <a href="<?= $dados['contatos']['facebook']; ?>" target="_blank" class="mx-2"><i class="fab fa-facebook display-2"></i></a>
     </div>
        
 </div>

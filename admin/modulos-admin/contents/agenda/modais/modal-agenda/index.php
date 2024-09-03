@@ -1,12 +1,12 @@
-<div class="modal fade" id="modal-links-footer" tabindex="-1" aria-labelledby="modal-links-footer" aria-hidden="true">
+<div class="modal fade" id="modal-agenda" tabindex="-1" aria-labelledby="modal-agenda" aria-hidden="true">
   <div class="modal-dialog modal-dialog-centered">
     <div class="modal-content">
       <div class="modal-header">
-        <h1 class="modal-title fs-5">Adicionar Link Footer +</h1>
+        <h1 class="modal-title fs-5">Adicionar Evento +</h1>
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
       
-        <form onsubmit="loading()" action="modulos-admin/contents/agenda/php/adicionar-link-footer.php" method="post">
+        <form onsubmit="loading()" action="modulos-admin/contents/agenda/php/adicionar-evento.php" method="post">
             <div class="modal-body">
 
                 <div class='mb-3'>

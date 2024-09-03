@@ -7,7 +7,7 @@
 
 
 
-<section id="contato" style="background-image: url('<?= $base_url ?>assets/imagens/capa-formulario.jpg');">
+<section id="contato" style="background-image: url('<?= $base_url ?>admin/assets/imagens/arquivos/banners/<?= $dados['banners'][0]['banner_contato_desktop']; ?>');">
 
     <h1 class="d-none">Formulário para contato</h1>
 
@@ -18,11 +18,11 @@
              <h1 class="mb-5">CONTATOS</h1>
 
              <div class="d-flex flex-column">
-                 <a class="mb-3 fs-4" href="#"><i class="fas fa-map-pin me-2"></i> Passo Fundo - RS</a>
-                 <a class="mb-3 fs-4" href="https://wa.me/5554991538488" target="_blank"><i class="fab fa-whatsapp me-2"></i> (54) 99153-8488</a>
-                 <a class="mb-3 fs-4" href="mailto:aliencorerock@gmail.com"><i class="fas fa-envelope me-2"></i> aliencorerock@gmail.com</a>
-                 <a class="mb-3 fs-4" href="https://www.instagram.com/aliencore_rock/" target="_blank"><i class="fab fa-instagram me-2"></i> @aliencore_rock</a>
-                 <a class="mb-3 fs-4" href="https://www.facebook.com/aliencorerock" target="_blank"><i class="fab fa-facebook me-2"></i> aliencorerock</a>
+                 <a class="mb-3 fs-4" href="#"><i class="fas fa-map-pin me-2"></i> <?= $dados['endereco']['cidade']; ?> - <?= $dados['endereco']['estado']; ?></a>
+                 <a class="mb-3 fs-4" href="https://wa.me/<?= preg_replace("/[^0-9]/", "", $dados['contatos']['wpp_principal']); ?>" target="_blank"><i class="fab fa-whatsapp me-2"></i> <?= $dados['contatos']['wpp_principal']; ?></a>
+                 <a class="mb-3 fs-4" href="mailto:<?= $dados['contatos']['email_site']; ?>"><i class="fas fa-envelope me-2"></i> <?= $dados['contatos']['email_site']; ?></a>
+                 <a class="mb-3 fs-4" href="<?= $dados['contatos']['instagram']; ?>" target="_blank"><i class="fab fa-instagram me-2"></i> <?= $dados['contatos']['_instagram']; ?></a>
+                 <a class="mb-3 fs-4" href="<?= $dados['contatos']['facebook']; ?>" target="_blank"><i class="fab fa-facebook me-2"></i> <?= $dados['contatos']['_facebook']; ?></a>
              </div>
 
          </div>

@@ -9,7 +9,7 @@ class AgendaRepository {
         return Agenda::all();
     }
 
-    public static function createLinkFooter($link, $url) {
+    public static function createEvento($link, $url) {
         $res = Agenda::create([
             'link' => $link,
             'url' => $url

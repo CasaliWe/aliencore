@@ -11,6 +11,6 @@ function abrirModalEditar(id, titulo, descri, link, img){
 
 // abrir modal boostrap
 function openModalImagensFull() {
-    var meuModal = new bootstrap.Modal(document.getElementById('modal-editar-projetos'));
+    var meuModal = new bootstrap.Modal(document.getElementById('modal-editar-integrantes'));
     meuModal.show();
 }

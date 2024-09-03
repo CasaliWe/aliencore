@@ -43,9 +43,9 @@
     <?php include_once "modulos-admin/modal-aviso/index.php"; ?>
     <!-- MODAL AVISOS -->
 
-    <!-- MODAL LINKS FOOTER -->
+    <!-- MODAL AGENDA -->
     <?php include_once "modulos-admin/contents/agenda/modais/modal-agenda/index.php"; ?>
-    <!-- MODAL LINKS FOOTER -->
+    <!-- MODAL AGENDA -->
 
 
 

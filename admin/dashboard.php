@@ -11,6 +11,10 @@
     //pegando endereco
     use Repositories\EnderecoRepository;
     $endereco = EnderecoRepository::getEndereco();
+
+    //pegando sobre
+    use Repositories\SobreRepository;
+    $sobre = SobreRepository::get();
 ?>
 
 <!DOCTYPE html>

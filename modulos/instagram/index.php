@@ -16,7 +16,7 @@
     <iframe data-aos="fade-up" src="https://snapwidget.com/embed/1048498" class="d-none d-lg-block snapwidget-widget mb-5" allowtransparency="true" frameborder="0" scrolling="no" style="border:none; overflow:hidden;  width:555px; height:370px"></iframe>
     <iframe data-aos="fade-up" src="https://snapwidget.com/embed/1048500" class="d-block d-lg-none snapwidget-widget mb-5" allowtransparency="true" frameborder="0" scrolling="no" style="border:none; overflow:hidden;  width:270px; height:270px"></iframe>
 
-    <a data-aos="fade-up" href="https://www.instagram.com/aliencore_rock/" target="_blank" id="btn-ver-nosso-instagram"> <i class="fab fa-instagram me-1"></i> Ver nosso instagram</a>
+    <a data-aos="fade-up" href="<?= $dados['contatos']['instagram']; ?>" target="_blank" id="btn-ver-nosso-instagram"> <i class="fab fa-instagram me-1"></i> Ver nosso instagram</a>
       
 </section>
 <!--INSTAGRAM-->

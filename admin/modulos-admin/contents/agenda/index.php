@@ -8,7 +8,7 @@
 <!-- agenda -->
 <section>
 
-    <button type="button" class="mb-5 btn btn-success btn-sm" data-bs-toggle="modal" data-bs-target="#modal-links-footer"> Adicionar Evento + </button> 
+    <button type="button" class="mb-5 btn btn-success btn-sm" data-bs-toggle="modal" data-bs-target="#modal-agenda"> Adicionar Evento + </button> 
 
     <!-- lista agenda -->
     <?php foreach ($eventos as $key => $link) { ?>
@@ -22,7 +22,7 @@
             <div id="links-footer-<?= $key ?>" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
                 <div class="accordion-body">
     
-                    <form onsubmit="loading()" action="modulos-admin/contents/agenda/php/atualizar-link-footer.php" method="post">
+                    <form onsubmit="loading()" action="modulos-admin/contents/agenda/php/atualizar-evento.php" method="post">
                         <input type="hidden" value="<?= $link['id']; ?>" name="link_footer_id">
                     
                         <div class='mb-3'>
@@ -53,7 +53,7 @@
 
 <script>
     async function deletarLinkFooter(id){
-        const res = await fetch(`${base_url}/modulos-admin/contents/agenda/php/deletar-link-footer.php?id=${id}`)
+        const res = await fetch(`${base_url}/modulos-admin/contents/agenda/php/deletar-evento.php?id=${id}`)
         const data = await res.json()
         if(data.status){
             let url = new URL(window.location.href);

@@ -101,4 +101,26 @@
 
 
 
+<!-- texto e imagem sobre -->
+<form onsubmit="loading()" action="modulos-admin/contents/dashboard/php/atualizar-sobre.php" method="post" class="pt-5 border-top" enctype="multipart/form-data">
+    <div class='mb-3'>
+      <label for='text_sobre'>Texto sobre*</label>
+      <textarea id='text_sobre' name='text_sobre' rows="3" class='form-control' required> <?= $sobre['texto_sobre']; ?> </textarea>
+    </div>
+
+    <div class='mb-4'>
+      <label for='img_sobre'>Imagem sobre*</label>
+      <input type="file" id='img_sobre' name='img_sobre' class='form-control'>
+      <div class="_container-img-previa"> <img src="<?= $base_url; ?>assets/imagens/arquivos/sobre/<?= $sobre['imagem_sobre']; ?>"> </div>
+    </div>
+
+    <div class="w-100 mb-4">
+        <button class="_btn-salvar btn btn-success">Salvar</button>
+    </div>
+</form>
+<!-- texto e imagem sobre -->
+
+
+
+
 <script src="<?php echo $base_url ?>modulos-admin/contents/dashboard/js/app.js"></script>

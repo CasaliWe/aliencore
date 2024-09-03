@@ -5,23 +5,23 @@
     if($pagAtual == 'Sobre'){
         $titulo_pagina_banner_all = mb_strtoupper($pagAtual, 'UTF-8');
         $pagina_atual_banner_all = 'sobre.php';
-        $banner = $base_url . "assets/imagens/capa-home.jpeg";
+        $banner = $base_url . "admin/assets/imagens/arquivos/banners/".$dados['banners'][0]['banner_sobre_desktop'];
     }else if($pagAtual == 'Galeria'){
         $titulo_pagina_banner_all = mb_strtoupper($pagAtual, 'UTF-8');
         $pagina_atual_banner_all = 'galeria.php';
-        $banner = $base_url . "assets/imagens/capa-home.jpeg";
+        $banner = $base_url . "admin/assets/imagens/arquivos/banners/".$dados['banners'][0]['banner_galeria_desktop'];
     }else if($pagAtual == 'Notícias'){
         $titulo_pagina_banner_all = mb_strtoupper($pagAtual, 'UTF-8');
         $pagina_atual_banner_all = 'noticias.php';
-        $banner = $base_url . "assets/imagens/capa-home.jpeg";
+        $banner = $base_url . "admin/assets/imagens/arquivos/banners/".$dados['banners'][0]['banner_noticias_desktop'];
     }else if($pagAtual == 'Notícia'){
         $titulo_pagina_banner_all = mb_strtoupper($pagAtual, 'UTF-8');
         $pagina_atual_banner_all = 'noticia.php';
-        $banner = $base_url . "assets/imagens/capa-home.jpeg";
+        $banner = $base_url . "admin/assets/imagens/arquivos/banners/".$dados['banners'][0]['banner_noticias_desktop'];
     }else if($pagAtual == 'Agenda'){
         $titulo_pagina_banner_all = mb_strtoupper($pagAtual, 'UTF-8');
         $pagina_atual_banner_all = 'agenda.php';
-        $banner = $base_url . "assets/imagens/capa-home.jpeg";
+        $banner = $base_url . "admin/assets/imagens/arquivos/banners/".$dados['banners'][0]['banner_agenda_desktop'];
     }
 ?>
 

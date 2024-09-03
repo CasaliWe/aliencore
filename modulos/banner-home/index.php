@@ -8,7 +8,7 @@
 
 
 <!--BANNER INICIAL / NAVEGAÇÃO DESKTOP-->
-<header style="background-image: url(<?= $base_url ?>assets/imagens/capa-home.jpeg);" class="_header-home w-100 contianer-fluid bg-dark d-flex flex-column justify-content-center align-items-center">
+<header style="background-image: url(<?= $base_url ?>admin/assets/imagens/arquivos/banners/<?= $dados['banners'][0]['banner_home_desktop']; ?>);" class="_header-home w-100 contianer-fluid bg-dark d-flex flex-column justify-content-center align-items-center">
 
 
     <?php include_once __DIR__ . '/../../modulos/nav/index.php'; ?>
@@ -26,9 +26,9 @@
 
 
     <div class="_icons-inicio text-center">
-         <a href="https://www.instagram.com/aliencore_rock/" target="_blank" class="mx-2"><i class="fab fa-instagram"></i></a>
-         <a href="https://www.facebook.com/aliencorerock" target="_blank" class="mx-2"><i class="fab fa-facebook"></i></a>
-         <a href="mailto:aliencorerock@gmail.com" class="mx-2"><i class="fas fa-envelope"></i></a>
+         <a href="<?= $dados['contatos']['instagram']; ?>" target="_blank" class="mx-2"><i class="fab fa-instagram"></i></a>
+         <a href="<?= $dados['contatos']['facebook']; ?>" target="_blank" class="mx-2"><i class="fab fa-facebook"></i></a>
+         <a href="mailto:<?= $dados['contatos']['email_site']; ?>" class="mx-2"><i class="fas fa-envelope"></i></a>
     </div>
       
 </header>

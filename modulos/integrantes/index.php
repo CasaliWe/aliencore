@@ -44,4 +44,15 @@
 
 
 
+<script>
+    // INTEGRANTES
+    var integrantes = []
+
+    <?php foreach ($dados['integrantes'] as $int) { ?>
+        integrantes.push({nome: '<?= $int['titulo'] ?>', img: '<?= $base_url ?>admin/assets/imagens/arquivos/integrantes/<?= $int['imagem'] ?>', instagram: '<?= $int['link'] ?>', descricao: '<?= $int['descricao'] ?>'})
+    <?php } ?>
+</script>
+
+
+
 <script src="<?= $base_url ?>modulos/integrantes/js/app.js"></script>

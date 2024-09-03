@@ -10,6 +10,8 @@
     $activeBanners = false;
     $activeAgenda = false;
     $activeIntegrantes = false;
+    $activeNoticias = false;
+    $activeLancamento = false;
 
     // Devolve o nome da página atual
     if(strpos($urlAtual, 'dashboard') !== false){
@@ -24,6 +26,12 @@
     }else if(strpos($urlAtual, 'integrantes') !== false){
         $tituloContentPagina = "Integrantes";
         $activeIntegrantes = true;
+    }else if(strpos($urlAtual, 'noticias') !== false){
+        $tituloContentPagina = "Notícias";
+        $activeNoticias = true;
+    }else if(strpos($urlAtual, 'lancamento') !== false){
+        $tituloContentPagina = "Lançamento";
+        $activeLancamento = true;
     }else{
         $tituloContentPagina = "Informações";
         $activeDashboard = true;
@@ -38,5 +46,7 @@
     <a href="banners.php" class="link-nav-desktop <?= $activeBanners ? 'active-link-desktop' : ''; ?>">Banners</a>
     <a href="agenda.php" class="link-nav-desktop <?= $activeAgenda ? 'active-link-desktop' : ''; ?>">Agenda</a>
     <a href="integrantes.php" class="link-nav-desktop <?= $activeIntegrantes ? 'active-link-desktop' : ''; ?>">Integrantes</a>
+    <a href="noticias.php" class="link-nav-desktop <?= $activeNoticias ? 'active-link-desktop' : ''; ?>">Notícias</a>
+    <a href="lancamento.php" class="link-nav-desktop <?= $activeLancamento ? 'active-link-desktop' : ''; ?>">Lançamento single</a>
     <a class="link-nav-desktop"><?php include "modulos-admin/btn-logout/index.php"; ?></a>
 </nav>

@@ -22,28 +22,21 @@
             <!--lista de shows-->
             <div class="border-bottom mt-5 pt-3 px-2 pb-3">
 
-                  <div data-aos="fade-up" class="W-100 py-2 d-flex align-items-center justify-content-between">
-                       <p class="fw-bold fs-6 _descri-evento">Dia 13 de Abril de 2024 - <span class="text-alien fw-bold fs-6">Despedida Maroca Bar</span> </p>
-                       <a href="https://www.instagram.com/aliencore_rock/" target="_blank" class="btn-ver-no-insta-evento">Ver no instagram</a>
-                  </div>
+               <?php foreach ($dados['eventos'] as $evento) { ?>
+                    <div data-aos="fade-up" class="W-100 py-2 d-flex align-items-center justify-content-between">
+                       <p class="fw-bold fs-6 _descri-evento"><?= $evento['link']; ?> - <span class="text-alien fw-bold fs-6"><?= $evento['url']; ?></span> </p>
+                       <a href="<?= $dados['contatos']['instagram']; ?>" target="_blank" class="btn-ver-no-insta-evento">Ver no instagram</a>
+                    </div>
+               <?php } ?>
 
-                  <div data-aos="fade-up" class="W-100 py-2 d-flex align-items-center justify-content-between">
-                       <p class="fw-bold fs-6 _descri-evento">Dia 18 de Maio de 2024 - <span class="text-alien fw-bold fs-6">Cultura 24hrs</span> </p>
-                       <a href="https://www.instagram.com/aliencore_rock/" target="_blank" class="btn-ver-no-insta-evento">Ver no instagram</a>
-                  </div>
-
-                  <div data-aos="fade-up" class="W-100 py-2 d-flex align-items-center justify-content-between">
-                       <p class="fw-bold fs-6 _descri-evento">Dia 26 de Maio de 2024 - <span class="text-alien fw-bold fs-6">Concurso de bandas - Maroca bar</span> </p>
-                       <a href="https://www.instagram.com/aliencore_rock/" target="_blank" class="btn-ver-no-insta-evento">Ver no instagram</a>
-                  </div>
+               <?php 
+                  if(count($dados['eventos']) == 0){
+                         echo '<h3 data-aos="fade-up" class="text-secondary my-5 py-4 text-center w-100">Sem eventos no momento.</h3>';
+                  }
+               ?>
 
             </div>
             <!--lista de shows-->
-
-            <!--quando não houver shows-->
-            <h3 data-aos="fade-up" class="d-none text-secondary my-5 py-4 text-center w-100 border-bottom">Sem eventos no momento.</h3>
-            <!--quando não houver shows-->
-
 
             <p data-aos="fade-up" class="w-100 text-center text-white mt-5 pt-4 fs-5">Para mais informações <a href="https://wa.me/5554991538488" target="_blank" class="text-alien" style="text-decoration: underline;">Entre em contato!</a></p>
 

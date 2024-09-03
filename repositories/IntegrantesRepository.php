@@ -6,7 +6,7 @@ use Models\Integrantes;
 class IntegrantesRepository {
 
     public static function getAll(){
-        return Integrantes::all();
+        return Integrantes::orderBy('id', 'desc')->get();
     }
 
     public static function create($titulo, $descri, $link, $imagem){

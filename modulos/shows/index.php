@@ -8,7 +8,7 @@
 
 
 <!--SHOWS DA ALIEN CORE BANNER-->
-<section id="shows-alien-core-home" style="background-image: url('<?= $base_url ?>assets/imagens/capa-home.jpeg');">
+<section id="shows-alien-core-home" style="background-image: url(<?= $base_url ?>admin/assets/imagens/arquivos/banners/<?= $dados['banners'][0]['banner_home_desktop']; ?>);">
 
        <h1 class="d-none">Show da banda Alien Core</h1>
 

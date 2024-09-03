@@ -2,7 +2,10 @@
 <html lang="pt-br">
 <head>
 
-    <?php include_once __DIR__ . '/modulos/header/index.php'; ?>
+    <?php 
+        include_once __DIR__ . '/modulos/header/index.php';
+        include_once __DIR__ . '/helpers/PegarDadosSite.php';
+    ?>
 
 </head>
 <body>
