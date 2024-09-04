@@ -22,4 +22,33 @@
         width: 100%;
     }
 }
+
+
+._container-img{
+    width: 100%;
+    height: 230px;
+}
+._container-img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+@media(max-width:992px){
+    ._container-img{
+        width: 100%;
+        height: auto;
+    }
+}
+
+
+.custom-swal {
+    width: 60% !important; 
+    height: auto !important; 
+    max-width: none !important; 
+}
+
+.custom-swal-image {
+    width: 100%;
+}
 /*GALERIA ALL IMAGES EVENTOS*/

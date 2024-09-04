@@ -16,6 +16,9 @@
 <meta property="og:title" content="Banda Alien Core">
 <meta property="og:description" content="Conheça a Banda Alien Core, criada em 2022 na cidade de Passo Fundo, Rio Grande do Sul. Rock de qualidade e história única.">
 
+<!-- ALERT -->
+<script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
 <!--FAVICON-->
 <link rel="icon" href="<?= $base_url; ?>assets/imagens/favicon.png">
 

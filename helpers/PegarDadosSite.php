@@ -36,6 +36,10 @@ $lancamento = LancamentoRepository::getAll();
 use Repositories\NoticiasRepository;
 $noticias = NoticiasRepository::getAll();
 
+// pegando galeria
+use Repositories\GaleriaRepository;
+$galeria = GaleriaRepository::get();
+
 // juntando todos os dados
 $dados = [
     'contatos' => $contatos,
@@ -45,5 +49,6 @@ $dados = [
     'eventos' => $eventos,
     'integrantes' => $integrantes,
     'lancamento' => $lancamento,
-    'noticias' => $noticias
+    'noticias' => $noticias,
+    'galeria' => $galeria
 ];
